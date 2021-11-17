@@ -1,0 +1,7 @@
+O que vou aprender na Trybe:
+
+- Bash
+- Unix
+- Git
+- Java
+- HTML
