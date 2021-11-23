@@ -2,22 +2,27 @@ body{
     margin-top: 40px;
 }
 #azul h3:hover{
+    border: solid blue 3px;
     color:  blue;
     font-size: 40px;
 }
 #verde h3:hover{
+    border: solid green 3px;
     color: green;
     font-size: 40px;
 }
 #ciano h3:hover{
+    border: solid red 3px;
     color: cyan;
     font-size: 40px;
 }
 #marrom h3:hover{
+    border: solid rgb(78, 51, 25) 3px;
     color:  rgb(78, 51, 25);
     font-size: 40px;
 }
 #amarelo h3:hover{
+    border: solid yellow 3px;
     color: yellow;
     font-size: 40px;
 }
