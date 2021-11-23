@@ -1,4 +1,7 @@
 #corpo {
     text-align: center;
-
+}
+li:hover{
+    background-color: rgb(25, 73, 73);
+    color: white;
 }
