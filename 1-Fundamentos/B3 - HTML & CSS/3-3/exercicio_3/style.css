@@ -8,3 +8,14 @@ li:hover{
 li:active{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+li{
+    list-style: none;
+}
+p{
+    font-size: 20px;
+    font-weight: 700;
+}
+body{
+    background-color: rgb(218, 207, 184);
+    font-size: 20px;
+} 
