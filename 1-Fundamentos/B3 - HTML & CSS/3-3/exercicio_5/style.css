@@ -4,3 +4,6 @@
 .par{
     color: rgb(61, 175, 61);
 }
+.impar{
+    text-transform: uppercase ;
+}
