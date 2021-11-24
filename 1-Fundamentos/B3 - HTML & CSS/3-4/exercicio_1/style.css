@@ -29,4 +29,7 @@ h1 {
     width: 300px;
     display: inline-block;
   }
-  
+  .rules {
+    text-align: center;
+}
+
