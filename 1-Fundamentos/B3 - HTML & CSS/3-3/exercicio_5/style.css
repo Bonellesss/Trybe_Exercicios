@@ -26,3 +26,23 @@ li em{
  .java {
     background-color: pink;
 }
+#stack:hover{
+    font-weight: 900;
+    color: rgb(236, 95, 13);
+}
+#w3:hover{
+    font-weight: 900;
+    color: green ;
+}
+#mdn:hover{
+    font-weight: 900;
+    color: #000 ;
+}
+#dev:hover{
+    font-weight: 900;
+    color: yellow;
+}
+#trybe:hover{
+    font-weight: 900;
+    color: #036b52;;
+}
