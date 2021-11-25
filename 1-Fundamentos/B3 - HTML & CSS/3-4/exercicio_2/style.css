@@ -3,6 +3,13 @@
 }
 body {
     background-color: rgb(149, 213, 178);
+
+}
+h3 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 40px
 }
 .header {
     background-color: rgb(27, 67, 50);
@@ -32,3 +39,31 @@ body {
     color: rgb(149, 213, 178);
     text-decoration: none;
 } 
+.article {
+    display: block;
+    padding-top: 150px ;
+}
+.article p{
+    font-size: 20px;
+    
+}
+.whatis {
+    padding-top: 30px;
+}
+.whatis table, td, caption {
+    border: solid rgb(8, 28, 21);
+    border-collapse: collapse ;
+    text-align: center;
+}
+.whatis table {
+    width: 600px;
+    height: 190px;
+    margin: 50px auto;
+
+}
+img {
+    width: 600px;
+    margin: 40px auto;
+    display: block;
+
+}   
