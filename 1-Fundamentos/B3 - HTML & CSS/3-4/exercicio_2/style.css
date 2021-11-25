@@ -92,10 +92,10 @@ img {
 }
 .aside {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 85.5%;
-    bottom: 30%;
-    padding-bottom: 200px;
+    bottom: 12%;
+    padding-bottom: 460px;
     width: auto;
     padding-left:10px;
     padding-right:10px ;
@@ -105,7 +105,7 @@ img {
 }
 .aside a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: ;
 }
 .footer {
     padding-top: 8px;
@@ -115,9 +115,10 @@ img {
     top: 94.9%;
     width: 100%;  
     padding-bottom: 20px; 
+    border-top: solid rgb(45, 106, 79) 5px ;
 }
 .footer p {
-    font-size: 24px;
+    font-size: 20px;
     padding-right: 10px;
     line-height: 40 px ;
     color: rgb(216, 243, 220);
