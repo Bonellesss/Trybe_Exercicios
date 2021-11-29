@@ -67,4 +67,22 @@ console.log('');
 
 
 
-// Exer
+// Exercicio - 6
+
+let countImpar = 0
+
+for (let countIndex = 0; countIndex < numbers.length; countIndex += 1) {
+    if (numbers[countIndex] % 2 !== 0) {
+        countImpar += 1;
+    }
+}
+
+if (countImpar !== 0) {
+    console.log("R.6: " + countImpar);
+    console.log('');
+    console.log('');
+} else {
+    console.log("R.6: Nenhum impar encontrado");
+    console.log('');
+    console.log('');
+}
