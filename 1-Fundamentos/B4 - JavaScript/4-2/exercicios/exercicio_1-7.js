@@ -12,4 +12,10 @@ let sum = 0
 for (let numberIndex = 0; numberIndex < numbers.length; numberIndex += 1) {
       sum += numbers[numberIndex];
 }
-console.log(sum);
+console.log("The sum is: " + sum);
+
+// Exercicio - 3 
+
+let average = sum / numbers.length
+
+console.log("The average is: " + average);
