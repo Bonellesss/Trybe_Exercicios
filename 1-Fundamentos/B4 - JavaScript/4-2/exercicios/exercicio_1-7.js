@@ -86,3 +86,20 @@ if (countImpar !== 0) {
     console.log('');
     console.log('');
 }
+
+
+
+
+// Exercicio - 7
+
+let little = numbers[0] 
+
+for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] < little) {
+        little = numbers[i]
+    } 
+} 
+
+console.log("R.7: O menor é o " + little);
+console.log('');
+console.log('');
