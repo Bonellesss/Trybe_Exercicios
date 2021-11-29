@@ -1,10 +1,14 @@
-const myName = "André"
-const birthCity = "Guarapari"
-let birtYear = 2002
-birtYear = 2030
-birthCity = "New York"
-//se rodar o código agora vai dar erro porque não da pra mudar uma constante
+const a = 9
+const b = 5
+            
+let adição = a + b
+let subtração = a - b
+let mutiplicação = a * b
+let divisão = a / b
+let módulo = a % b
 
-console.log(myName)
-console.log(birthCity)
-console.log(birtYear)
+console.log(adição);
+console.log(subtração);
+console.log(mutiplicação);
+console.log(divisão);
+console.log(módulo);
