@@ -19,3 +19,12 @@ console.log("The sum is: " + sum);
 let average = sum / numbers.length
 
 console.log("The average is: " + average);
+
+// Exercicio - 4
+
+if (average > 20) {
+    console.log("Average maior que 20");
+} else {
+    console.log("Average menor ou igual a 20");
+}
+
