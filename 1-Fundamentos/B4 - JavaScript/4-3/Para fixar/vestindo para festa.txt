@@ -1,0 +1,13 @@
+1 - vai até o quarto  
+2 - abre a porta
+3 - caminha até o armario
+4 - abre armario 
+5 - escolhe a roupa que mais combina
+6 - olha no espelho 
+7 - confere se esta passada, se sim coloca sobre a cama, se não passa e coloca sobre a cama
+8 - vai pro baheiro 
+9 - toma banho 
+10 - volta pro quarto 
+11 - coloca a roupa 
+12 - vai pra festa 
+ 
