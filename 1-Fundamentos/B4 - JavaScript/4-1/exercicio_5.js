@@ -1,7 +1,7 @@
 const a = 70;
-const num2 = 80;
-const num3 = 30;
-let soma = num1 + num2 + num3;
+const b = 80;
+const c = 30;
+let soma = num1 + b + c;
 
 
 if (soma === 180 && soma > 0) {

@@ -89,4 +89,25 @@ let maior = comparador(2066, 900, 345)
 console.log(maior);
 
 
-fixando
+// fixando - 4
+
+// if (a > 0) {
+//     console.log("Positive");
+// } else if (a === 0) {
+//     console.log("zero");
+// } else {
+//     console.log("Negative");
+// }
+
+function signalAvaliator(number) {
+    if (number > 0) {
+        return "positive"
+    } else if (number === 0) {
+        return "zero"
+    } else {
+        return "negative"
+    }
+}
+
+let signal = signalAvaliator(1)
+console.log(signal);
