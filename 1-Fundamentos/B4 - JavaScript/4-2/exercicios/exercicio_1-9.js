@@ -1,5 +1,12 @@
 // Exercicio - 1 
 
+// Algoritmo
+
+// adicionar o Array
+// criar o laço for 
+//    imprimir com o console.log
+
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 for (let number of numbers) {
@@ -12,6 +19,15 @@ console.log('');
 
 
 // Exercicio - 2
+
+// Algoritmo
+
+// cosidere o Array numbers
+// criar variavel com valor = 0
+// usar o for
+//   somar todos os numeros do Array
+// imprimir variavel com o resultado
+
 
 let sum = 0
 for (let numberIndex = 0; numberIndex < numbers.length; numberIndex += 1) {
@@ -26,6 +42,12 @@ console.log('');
 
 // Exercicio - 3 
 
+// Algoritmo
+
+// considere a variavel da soma do Array
+// dividir variavel da soma pelo numero de itens no Array
+// imprimir resultado
+
 let average = sum / numbers.length
 
 console.log("R.3: The average is: " + average);
@@ -36,6 +58,15 @@ console.log('');
 
 
 // Exercicio - 4
+
+// Algoritmo
+
+// considerar resultado do exercicio anterior 
+// verificar se o resultado é maior que 20
+// se for maior
+    // imprimir "valor maior que 20"
+// se for menor
+    // imprimir "valor menor que 20"
 
 if (average > 20) {
     console.log("R.4: Average maior que 20");
@@ -51,6 +82,11 @@ if (average > 20) {
 
 
 // Exercicio - 5
+
+// Algoritmo
+
+// cosiderar Array numbers
+usar
 
 let bigger = 0 
 
