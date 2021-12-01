@@ -78,3 +78,5 @@ console.log('A jogadora ' + player.fullName + ' possui ' + player.medals.golden 
 console.log(' ');
 console.log('----------------');
 console.log(' ');
+
+
