@@ -64,3 +64,29 @@ function comparator(iten1,iten2) {
 
 let bigger = comparator(3000,1000);
 console.log(bigger);
+
+// fixando - 3 
+
+// if (a > b && a > c) {
+//     console.log(a);
+// } else if (b > a && b > c) {
+//     console.log(b);
+// } else {
+//     console.log(c);
+// }
+
+function comparador(num1, num2, num3) {
+    if (num1 > num2 && num1 > num3) {
+     return num1;
+ } else if (num2 > num1 && num2 > num3) {
+     return num2;
+ } else {
+     return num3;
+}
+}
+
+let maior = comparador(2066, 900, 345)
+console.log(maior);
+
+
+fixando

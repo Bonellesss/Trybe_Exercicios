@@ -1,8 +1,8 @@
-const a = 0;
+const num1 = 0;
 
-if (a > 0) {
+if (num1 > 0) {
     console.log("Positive");
-} else if (a === 0) {
+} else if (num1 === 0) {
     console.log("zero");
 } else {
     console.log("Negative");
