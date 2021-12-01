@@ -28,3 +28,12 @@ for (let key in info) {
     console.log(key);
 }
 
+// exercicio - 4
+
+// Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto. 
+
+for (let key in info) {
+    console.log(info[key]);
+}
+
+
