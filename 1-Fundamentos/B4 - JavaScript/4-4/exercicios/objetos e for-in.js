@@ -77,3 +77,15 @@ leitor.fullName = leitor.nome + ' ' + leitor.sobrenome
 
 console.log('O livro favorito de ' + leitor.fullName + " se chama '" + leitor.livrosFavoritos[0].titulo +  "'");
 
+
+// exercicio - 7
+
+// Adicione um novo livro favorito na chave livrosFavoritos , que é um array.
+
+leitor.livrosFavoritos[1] = {
+  titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+  autor: 'JK Rowling',
+  editor: 'Rocco',
+},
+
+console.log(leitor.livrosFavoritos);
