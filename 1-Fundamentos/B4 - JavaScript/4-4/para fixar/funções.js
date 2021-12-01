@@ -11,6 +11,8 @@
 // let divisão = a / b
 // let módulo = a % b
 
+
+
 function adição(value1, value2) {
     return value1 + value2 
 }
@@ -37,4 +39,28 @@ console.log(divisão(value1, value2));
 console.log(modulo(value1, value2));
 }
 
-results=operations(10, 4)
+operations(10, 4)
+
+
+// fixando - 2 
+
+// const a = 9
+// const b = 5
+// let comparação = a > b 
+
+// if (comparação = true) {
+//     console.log(a);
+// } else {
+    // console.log(b);
+
+
+function comparator(iten1,iten2) {
+    if (iten1 > iten2) {
+        return iten1;
+    } else {
+        return iten2;
+    };
+};
+
+let bigger = comparator(3000,1000);
+console.log(bigger);
