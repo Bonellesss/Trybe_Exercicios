@@ -66,14 +66,14 @@ console.log(' ');
 
 
 
-// fixando - 
+// fixando - 5
 
 
-// 4 - Acesse a chave bestInTheWorld e faça um console.log no seguinte formato: "A jogadora Marta Silva foi eleita a melhor do mundo por 6 vezes".
+// Acesse a chave medals e faça um console.log no seguinte formato: "A jogadora possui 2 medalhas de ouro e 3 medalhas de prata".
 
-console.log('Fixando - 4');
+console.log('Fixando - 5');
 
-console.log('A jogadora ' + player.fullName + ' foi eleita a melhor do mundo por ' + player.bestInTheWorld.length + ' vezes');
+console.log('A jogadora ' + player.fullName + ' possui ' + player.medals.golden + ' medalhas de ouro e ' + player.medals.silver + ' medalhas de prata');
 
 console.log(' ');
 console.log('----------------');
