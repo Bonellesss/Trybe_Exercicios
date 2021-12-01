@@ -111,3 +111,27 @@ function signalAvaliator(number) {
 
 let signal = signalAvaliator(1)
 console.log(signal);
+
+
+// fixando - 5
+
+// if (soma === 180 && soma > 0) {
+    // console.log(true);
+// } else {
+    // console.log(false);
+// }
+function sum(num1, num2, num3) {
+    return num1 + num2 + num3
+}
+
+let soma = sum(60,60,61)
+
+function isTriangle(soma) {
+    if (soma === 180 && soma > 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(isTriangle(soma));    
