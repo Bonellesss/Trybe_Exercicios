@@ -138,8 +138,20 @@
         // troca cor do pai da seção 3
 
         let pai = central.parentElement
-
         pai.style.backgroundColor = 'green'
+        
+        // remove os dois ultimos itens da lista 
+        
+        function remover(var1, max) {
+            for (let index = 0; index < max; index++) {
+                let last = var1.lastElementChild
+                
+                var1.removeChild(last)
+            }
+        }
+        remover(list, 2)
+
+        
     </script>
   </body>
 </html>
