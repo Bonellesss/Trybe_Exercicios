@@ -58,27 +58,43 @@
         // exercicio - 1 
         
         function textChange(id, texto) {
-            let text = document.getElementById(id)
-            return text.innerText = texto
+            let text = document.querySelector(id);
+            return text.innerText = texto;
         }
 
-        textChange('texto', 'Daqui a dois anos eu me vejo trabalhando remotamente em uma grande empresa de técnologia')
+        textChange('#texto', 'Daqui a dois anos eu me vejo trabalhando remotamente em uma grande empresa de técnologia');
 
 
         // exercicio - 2
         
         function colorChanger(clas, cor) {
-            let newColor = document.getElementsByClassName(clas)
+            let newColor = document.getElementsByClassName(clas);
             for (let index = 0; index < newColor.length; index++) {
-                return newColor[0].style.backgroundColor = cor
+                return newColor[0].style.backgroundColor = cor;
             }
         }
-        colorChanger('main-content', 'rgb(76,164,109)' )
+        colorChanger('main-content', 'rgb(76,164,109)');
 
         
         // exercicio - 3
 
-        colorChanger('center-content', 'white')
+        colorChanger('center-content', 'white');
+
+
+        // exercicio - 4
+
+        textChange('.title', 'Exercício 5.1 - JavaScript');
+
+
+        // exercicio - 5
+
+        function textTransformer(value, propriet) {
+            let upperCase = document.querySelector(value);
+
+            return upperCase.style.textTransform = propriet;
+        }
+
+        textTransformer('#texto', 'uppercase')
     </script>
   </body>
 </html>
