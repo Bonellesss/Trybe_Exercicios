@@ -62,6 +62,7 @@
         let corpo = document.getElementsByTagName('body')
         let title = document.createElement('h1')
         
+        title.className = 'title'
         title.innerText = 'Exercício 5.2 - JavaScript DOM'
         corpo[0].appendChild(title)
         
@@ -126,8 +127,13 @@
         for (let index = 0; index < 3; index++) {
             let subTitles = document.createElement('h3')
 
+            subTitles.className = 'description'
             main.appendChild(subTitles)
         }
+
+        // remove left-content
+
+        main.removeChild(leftContent)
     </script>
   </body>
 </html>
