@@ -95,6 +95,19 @@
         }
 
         textTransformer('#texto', 'uppercase')
+
+
+        // exercicio - 6 
+
+        function loger(tag) {
+            let logged = document.getElementsByTagName(tag)
+
+            for (let index = 0; index < logged.length; index++) {
+                console.log(logged[index]);                
+            }
+        }
+
+       loger('p')
     </script>
   </body>
 </html>
