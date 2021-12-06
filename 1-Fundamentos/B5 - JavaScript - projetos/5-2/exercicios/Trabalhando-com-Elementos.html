@@ -65,14 +65,19 @@
         title.innerText = 'Exercício 5.2 - JavaScript DOM'
         corpo[0].appendChild(title)
         
-        //    adicionan tag main 
+        // adicionando tag main filha da body
 
         let main = document.createElement('main')
        
         main.className = 'main-content'
         corpo[0].appendChild(main)
         
+        // adicionando tag section filha da main
 
+        let central = document.createElement('section')
+
+        central.className = 'center-content'
+        main.appendChild(central)
     </script>
   </body>
 </html>
