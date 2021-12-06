@@ -82,7 +82,7 @@
         // adicionando tag p filho da section
 
         let text = document.createElement('p')
-
+        text.innerText = 'Lorem ipsum dolor sit amet. Sed eveniet accusantium qui sapiente quas est cupiditate sapiente ut quia odit sit nobis velit est reiciendis dolorem. Qui similique excepturi At vero veniam eum repellat illo non quia ullam et tempora ipsa in repudiandae vero aut aperiam quia. Aut corporis adipisci et delectus perspiciatis et nulla mollitia eos mollitia fuga et distinctio obcaecati et error molestias! Non dolore tenetur sed deleniti culpa qui quas consequatur vel inventore eius id quia recusandae.'
         central.appendChild(text)
 
         // adiciona section filha da main
@@ -107,7 +107,19 @@
         image.src = 'https://picsum.photos/200'
         leftContent.appendChild(image)
 
+        // adiciona lista
+
+        let list = document.createElement('ul')
+
+        rightContent.appendChild(list)
+
         
+        for (let index = 1; index < 11; index++) {
+            let listItens = document.createElement('li')
+
+            listItens.innerText = index
+            list.appendChild(listItens)
+        }
     </script>
   </body>
 </html>
