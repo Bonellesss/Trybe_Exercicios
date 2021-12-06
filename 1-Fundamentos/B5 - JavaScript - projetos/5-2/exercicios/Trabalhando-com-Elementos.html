@@ -61,10 +61,16 @@
 
         let corpo = document.getElementsByTagName('body')
         let title = document.createElement('h1')
-
+        
         title.innerText = 'Exercício 5.2 - JavaScript DOM'
         corpo[0].appendChild(title)
+        
+        //    adicionan tag main 
 
+        let main = document.createElement('main')
+       
+        main.className = 'main-content'
+        corpo[0].appendChild(main)
         
 
     </script>
