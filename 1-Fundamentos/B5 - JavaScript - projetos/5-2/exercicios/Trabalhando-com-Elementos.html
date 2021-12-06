@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        // adicionando titulo 
+
+        let corpo = document.getElementsByTagName('body')
+        let title = document.createElement('h1')
+        
+        title.className = 'title'
+        title.innerText = 'Exercício 5.2 - JavaScript DOM'
+        corpo[0].appendChild(title)
+        
+        // adicionando tag main filha da body
+
+        let main = document.createElement('main')
+       
+        main.className = 'main-content'
+        corpo[0].appendChild(main)
+        
+        // adicionando tag section filha da main
+
+        let central = document.createElement('section')
+
+        central.className = 'center-content'
+        main.appendChild(central)
+
+        // adicionando tag p filho da section
+
+        let text = document.createElement('p')
+        text.innerText = 'Lorem ipsum dolor sit amet. Sed eveniet accusantium qui sapiente quas est cupiditate sapiente ut quia odit sit nobis velit est reiciendis dolorem. Qui similique excepturi At vero veniam eum repellat illo non quia ullam et tempora ipsa in repudiandae vero aut aperiam quia. Aut corporis adipisci et delectus perspiciatis et nulla mollitia eos mollitia fuga et distinctio obcaecati et error molestias! Non dolore tenetur sed deleniti culpa qui quas consequatur vel inventore eius id quia recusandae.'
+        central.appendChild(text)
+
+        // adiciona section filha da main
+
+        let leftContent = document.createElement('section')
+
+        leftContent.className = 'left-content'
+        main.appendChild(leftContent)
+
+        // adiciona section filha da main
+
+        let rightContent = document.createElement('section')
+
+        rightContent.className = 'right-content'
+        main.appendChild(rightContent)
+
+        // adiciona imagem 
+
+        let image = document.createElement('img')
+
+        image.className = 'small-image'
+        image.src = 'https://picsum.photos/200'
+        leftContent.appendChild(image)
+
+        // adiciona lista
+
+        let list = document.createElement('ul')
+
+        rightContent.appendChild(list)
+
+        
+        for (let index = 1; index < 11; index++) {
+            let listItens = document.createElement('li')
+
+            listItens.innerText = index
+            list.appendChild(listItens)
+        }
+
+        // adiciona tres h3
+
+        for (let index = 0; index < 3; index++) {
+            let subTitles = document.createElement('h3')
+
+            subTitles.className = 'description'
+            main.appendChild(subTitles)
+        }
+
+        // remove left-content
+
+        main.removeChild(leftContent)
+
+        // troca cor do pai da seção 3
+
+        let pai = central.parentElement
+        pai.style.backgroundColor = 'green'
+        
+        // remove os dois ultimos itens da lista 
+        
+        function remover(var1, max) {
+            for (let index = 0; index < max; index++) {
+                let last = var1.lastElementChild
+                
+                var1.removeChild(last)
+            }
+        }
+        remover(list, 2)
+
+        
+    </script>
+  </body>
+</html>
