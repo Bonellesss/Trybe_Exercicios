@@ -49,6 +49,15 @@ myWebpage.addEventListener('dblclick', teleport)
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
+function over(event) {
+    event.target.style.color = 'lime'
+}
+
+function leave() {
+    document.getElementById('my-spotrybefy').style.color = 'white';
+}
+myWebpage.addEventListener('mousemove', over)
+myWebpage.addEventListener('mouseleave', leave)
 // Segue abaixo um exemplo do uso de event.target:
 
 
