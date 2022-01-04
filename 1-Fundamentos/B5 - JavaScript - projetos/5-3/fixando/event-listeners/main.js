@@ -4,7 +4,7 @@ const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 const container = document.querySelector(".container")
-let listsItens = document.querySelectorAll('li')
+let colorPallet = document.querySelectorAll('li')
 
 // 1. Copie esse arquivo e edite apenas ele;
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
@@ -14,8 +14,8 @@ let listsItens = document.querySelectorAll('li')
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 function liClick (event) {
-  for (let index = 0; index < listsItens.length; index++) {
-      if (listsItens[index].className === 'tech') {
+  for (let index = 0; index < colorPallet.length; index++) {
+      if (colorPallet[index].className === 'tech') {
         document.querySelectorAll('li')[index].className = '';
         break
     }    
@@ -23,8 +23,8 @@ function liClick (event) {
     event.target.className = 'tech'
 }
 
-for (let i = 0; i < listsItens.length; i += 1) {
-    listsItens[i].addEventListener('click', liClick)
+for (let i = 0; i < colorPallet.length; i += 1) {
+    colorPallet[i].addEventListener('click', liClick)
 }
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
