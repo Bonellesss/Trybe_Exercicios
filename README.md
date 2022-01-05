@@ -41,11 +41,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [x] 5-5: _[Projeto - Meme Generator](https://andre-ars.github.io/projetos/meme generator/)_
-- [x] 5-6: _[Projeto - Arte com Pixels](https://andre-ars.github.io/projetos/pixels art/)_
-- [x] 5-7: _[Projeto - Lista de tarefas](https://andre-ars.github.io/projetos/todo list/)_
-- [x] 5-7: _[Projeto - Adivinhe a Cor](https://andre-ars.github.io/projetos/color guess/)_
-- [x] 5-7: _[Projeto - Carta Misteriosa](https://andre-ars.github.io/projetos/mystery letter/)_
+- [x] 5-5: _[Projeto - Meme Generator](https://andre-ars.github.io/projetos/meme%20generator/)_
+- [x] 5-6: _[Projeto - Arte com Pixels](https://andre-ars.github.io/projetos/pixels%20art/)_
+- [x] 5-7: _[Projeto - Lista de tarefas](https://andre-ars.github.io/projetos/todo%20list/)_
+- [x] 5-7: _[Projeto - Adivinhe a Cor](https://andre-ars.github.io/projetos/color%20guess/)_
+- [x] 5-7: _[Projeto - Carta Misteriosa](https://andre-ars.github.io/projetos/mystery%20letter/)_
 
 #### Bloco 6: HTML & CSS avançado
 
