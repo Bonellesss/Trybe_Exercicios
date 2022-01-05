@@ -40,12 +40,12 @@
                     <select name="state" id="state" required><option value=""></option></select>
                 </label><br>
                 <label for="">
-                    Tipo:
-                    <input type="radio" name="type" id="house" required>
-                    <label for="house">Casa</label>
-                    <input type="radio" name="type" id="apartment" required>
-                    <label for="apartment">Apartamento</label>
+                    Tipo de Moradia:
                 </label>
+                    <input type="radio" name="type" id="house" value="casa" required>
+                    <label for="house">Casa</label>
+                    <input type="radio" name="type" id="apartment" value="apartamento" required>
+                    <label for="apartment">Apartamento</label>
             </fieldset>
             <fieldset>
                 <legend>Ultima Experiencia</legend>
@@ -61,11 +61,13 @@
                     Descrição do Cargo:
                     <input type="text" value="" name="description" id="description" maxlength="500" required>
                 </label><br>
-                    Data de Inicio:
                 <label for="date">
+                    Data de Inicio:
                     <input type="date" name="date" id="date" value="" required>
                 </label>
             </fieldset>
+            <button type="submit" id="submit">Enviar</button>
+            <button type="reset">Limpar</button>
         </form>
     </main>
     <script src="script.js"></script>

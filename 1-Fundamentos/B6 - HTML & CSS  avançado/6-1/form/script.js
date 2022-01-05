@@ -6,7 +6,21 @@ window.onload = function () {
         let option = document.createElement('OPTION');
 
         option.innerText = states[i];
-        option.value = states[i]
-        stateSelect.appendChild(option)
+        option.value = states[i];
+        stateSelect.appendChild(option);
     }
+}
+
+document.getElementById('submit').addEventListener('click', function (event)  {
+    event.preventDefault();
+
+
+})
+
+function createCurriculo() {
+    let container = document.createElement('div');
+
+    document.querySelector('main').appendChild(container);
+
+   
 }
