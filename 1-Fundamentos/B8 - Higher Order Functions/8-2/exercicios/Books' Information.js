@@ -78,3 +78,10 @@ function smallerName() {
 }
 
 console.log(smallerName());
+
+// Exercicio 3
+function getNamedBook(num) {
+   return books.find(book => book.name.length === num)  
+}
+
+console.log(getNamedBook(26));
