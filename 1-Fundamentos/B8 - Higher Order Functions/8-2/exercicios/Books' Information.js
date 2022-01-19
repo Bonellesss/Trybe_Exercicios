@@ -98,5 +98,21 @@ function everyoneWasBornOnSecXX() {
     return books.every(book => book.author.birthYear >= 1901)
 }
 
-console.log(everyoneWasBornOnSecXX());
+// console.log(everyoneWasBornOnSecXX());
 
+// Exercicio 6
+function someBookWasReleaseOnThe80s() {
+    return books.some(book => book.releaseYear >= 1980 && book.releaseYear < 1990)
+}
+
+// console.log(someBookWasReleaseOnThe80s());
+
+// Exercicio 7
+function authorUnique() {
+return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear)
+      && (bookSome.author.name !== book.author.name)));
+}
+
+console.log(authorUnique());
