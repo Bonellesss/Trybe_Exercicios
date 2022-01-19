@@ -85,3 +85,10 @@ function getNamedBook(num) {
 }
 
 console.log(getNamedBook(26));
+
+// Exercicio 4
+function booksOrderedByReleaseYearDesc() {
+    return books.sort((a, b) => b.releaseYear - a.releaseYear);
+}
+
+console.log(booksOrderedByReleaseYearDesc());
