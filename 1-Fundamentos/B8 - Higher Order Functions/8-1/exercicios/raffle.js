@@ -4,12 +4,6 @@ const raffle = (maxNumber, myNumber, callBack) => {
     return  `O número sorteado foi: ${randomNumber}, seu numero é: ${myNumber}, ${callBack(myNumber, randomNumber)}`
 }
 
-const numCheck = (number, raffleNum) => {
-    if (number === raffleNum) {
-        return "Parabéns você ganhou"
-    }
-
-    return "Tente novamente"
-}
+const numCheck = (number, raffleNum) => number === raffleNum ? "Parabéns você ganhou" : "Tente novamente"
 
 console.log(raffle(5, 5, numCheck)); 
