@@ -66,7 +66,7 @@ function authorBornIn1947() {
    return books.find(book => book.author.birthYear === 1947).author.name  
 }
 
-console.log(authorBornIn1947());
+// console.log(authorBornIn1947());
 
 // Exercicio 2
 function smallerName() {
@@ -77,18 +77,26 @@ function smallerName() {
   return nameBook;
 }
 
-console.log(smallerName());
+// console.log(smallerName());
 
 // Exercicio 3
 function getNamedBook(num) {
    return books.find(book => book.name.length === num)  
 }
 
-console.log(getNamedBook(26));
+// console.log(getNamedBook(26));
 
 // Exercicio 4
 function booksOrderedByReleaseYearDesc() {
     return books.sort((a, b) => b.releaseYear - a.releaseYear);
 }
 
-console.log(booksOrderedByReleaseYearDesc());
+// console.log(booksOrderedByReleaseYearDesc());
+
+// Exercicio 5
+function everyoneWasBornOnSecXX() {
+    return books.every(book => book.author.birthYear >= 1901)
+}
+
+console.log(everyoneWasBornOnSecXX());
+
