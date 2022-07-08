@@ -22,8 +22,17 @@ const create = async (req, res) => {
   return res.status(code).json(result);
 };
 
+const update = async (req, res) => {
+  const { params: { id }, body } = req;
+
+  const { code, result } = await booksService.update(Number(id), body);
+
+  return res.status(code).json(result);
+};
+
 module.exports = {
   getAll,
   getById,
   create,
+  update,
 };

@@ -35,11 +35,25 @@ const create = async ({ title, author, pageQuantity }) => {
       title,
       author,
       pageQuantity: pageQuantity || null,
-    }
+    };
 
-    const book = await Book.create(info)
+    const book = await Book.create(info);
 
     return { code: 201, result: book };
+  } catch (error) {
+    return { code: 500, result: { message: error.message } };
+  }
+};
+
+const update = async (id, bookInfo) => {
+  try {
+    const [updatedRows] = await Book.update(bookInfo, { where: { id } });
+
+    if (!updatedRows) {
+      return { code: 404, result: { message: "Book not found!" } };
+    }
+
+    return { code: 200, result: { message: 'Book updated!'} };
   } catch (error) {
     return { code: 500, result: { message: error.message } };
   }
@@ -49,4 +63,5 @@ module.exports = {
   getAll,
   getById,
   create,
+  update,
 };
