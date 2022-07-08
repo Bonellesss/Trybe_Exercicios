@@ -14,7 +14,16 @@ const getById = async (req, res) => {
   return res.status(code).json(result);
 };
 
+const create = async (req, res) => {
+  const bookInfo = req.body;
+
+  const { code, result } = await booksService.create(bookInfo);
+
+  return res.status(code).json(result);
+};
+
 module.exports = {
   getAll,
   getById,
+  create,
 };
