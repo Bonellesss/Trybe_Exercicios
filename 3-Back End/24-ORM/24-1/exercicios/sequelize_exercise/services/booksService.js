@@ -10,6 +10,19 @@ const getAll = async () => {
   }
 };
 
+const getById = async (id) => {
+  try {
+    const book = await Book.findByPk(id);
+
+    if (!book) return { code: 404, result: { "message": "Book not found" } };
+
+    return { code: 200, result: book };
+  } catch (error) {
+    return { code: 500, result: { message: error.message } };
+  }
+};
+
 module.exports = {
   getAll,
+  getById,
 };
