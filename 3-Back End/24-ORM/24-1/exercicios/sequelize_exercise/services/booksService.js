@@ -4,7 +4,10 @@ const getAll = async () => {
   try {
     const books = await Book.findAll();
 
-    return { code: 200, result: books };
+    return {
+      code: 200,
+      result: books.length > 0 ? books : { message: "This table is empty!" },
+    };
   } catch (error) {
     return { code: 500, result: { message: error.message } };
   }
@@ -53,7 +56,21 @@ const update = async (id, bookInfo) => {
       return { code: 404, result: { message: "Book not found!" } };
     }
 
-    return { code: 200, result: { message: 'Book updated!'} };
+    return { code: 200, result: { message: "Book updated!" } };
+  } catch (error) {
+    return { code: 500, result: { message: error.message } };
+  }
+};
+
+const remove = async (id) => {
+  try {
+    const deletedRow = await Book.destroy({ where: { id } });
+
+    if (!deletedRow) {
+      return { code: 404, result: { message: "Book not found!" } };
+    }
+
+    return { code: 204, result: { message: "Book Removed!" } };
   } catch (error) {
     return { code: 500, result: { message: error.message } };
   }
@@ -64,4 +81,5 @@ module.exports = {
   getById,
   create,
   update,
+  remove,
 };

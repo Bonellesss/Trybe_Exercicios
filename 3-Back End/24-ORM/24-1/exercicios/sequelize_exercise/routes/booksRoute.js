@@ -11,4 +11,6 @@ router.post('/', booksController.create);
 
 router.put('/:id', booksController.update);
 
+router.delete('/:id', booksController.remove);
+
 module.exports = router;
